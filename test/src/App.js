@@ -13,7 +13,13 @@ const handleChange =(e)=>{
 }
 const handleSubmit=(e)=>{
   e.preventDefault()
+  
   setstar([...star, formInfo])
+  const getRates = (ratingNumber) => {
+    var Starratings = ["*","*","*","*","*","*","*","*","*","*",]
+    console.log(Starratings.slice(0, ratingNumber).join(""))
+    console.log(getRates())
+}
 }
 return (
   
